@@ -1,4 +1,4 @@
-# Using ANTLR with SourceAcademy Conductor
+# using ANTLR with "SourceAcademy Conductor"
 
 ## starting point:
 Refer to Sam's repository: https://github.com/tsammeow/conductor-runner-example
@@ -100,3 +100,10 @@ your rollup config (in rollup.config.js) already uses src/index.ts as entry, so 
 yarn build
 ```
 this produces a bundled file at dist/index.js that’s fully conductor-compatible.
+
+## load your evaluator into sourceacademy playground
+host this js file so that it is publicly acessible through a URL (https://example.com/your_evaluator.js).
+- settings > feature flags > enable conductor
+- settings > feature flags > evaluator URL: https://example.com/your_evaluator.js
+
+enjoy!
